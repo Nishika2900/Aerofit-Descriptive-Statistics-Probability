@@ -1,7 +1,7 @@
 # Aerofit Descriptive Statistics & Probability Analysis
 
 ## Objective
-The objective of this project is to perform descriptive statistics and probability analysis on the Aerofit dataset. This analysis will help in understanding the relationship between different variables like Age, Gender, Education, Marital Status, Usage, Fitness, Income, and Miles.
+The objective of this project is to perform descriptive statistics and probability analysis on the Aerofit dataset. This analysis helps in understanding the relationship between variables like Age, Gender, Education, Marital Status, Usage, Fitness, Income, and Miles.
 
 ## Dataset Information
 - **Product:** Type of product purchased.
@@ -25,9 +25,9 @@ The objective of this project is to perform descriptive statistics and probabili
     - Value counts for categorical columns.
 
 2. **Visualizations:**
-    - Box plots to visualize the distribution and outliers.
-    - Bar plots to show the relationship between categorical variables.
-    - Cross-tabulations to understand the distribution across different variables.
+    - Box plots to visualize distribution and outliers.
+    - Bar plots to show relationships between categorical variables.
+    - Cross-tabulations to understand distribution across different variables.
 
 ## Probability Analysis
 1. **Binomial Distribution:** 
@@ -38,8 +38,8 @@ The objective of this project is to perform descriptive statistics and probabili
 ## Achievements
 - **Data Cleaning and Preparation:** Successfully handled missing values and outliers.
 - **Descriptive Statistics:** Provided detailed insights into the dataset using summary statistics.
-- **Visualizations:** Created various visualizations to understand the relationships between variables.
-- **Probability Analysis:** Applied binomial and normal distribution to analyze fitness scores and income.
+- **Visualizations:** Created various visualizations to understand relationships between variables.
+- **Probability Analysis:** Applied binomial and normal distributions to analyze fitness scores and income.
 
 ## Tools and Libraries
 - **Python:** Programming language used.
@@ -49,25 +49,37 @@ The objective of this project is to perform descriptive statistics and probabili
 - **Matplotlib:** For plotting graphs.
 - **Scipy:** For scientific and technical computing.
 
+## Files
+- `aerofit_statistics_probability.py`: Python script for performing descriptive statistics and probability analysis on the Aerofit dataset.
+
+## Installation
+Ensure the following Python libraries are installed:
+
+```sh
+pip install pandas numpy matplotlib seaborn scipy
+```
+
+
 ## How to Use
-1. **Clone the Repository:**
-    ```sh
-    git clone https://github.com/yourusername/Aerofit-Descriptive-Statistics-Probability.git
-    ```
-2. **Navigate to the Project Directory:**
-    ```sh
-    cd Aerofit-Descriptive-Statistics-Probability
-    ```
-3. **Install the Required Libraries:**
-    ```sh
-    pip install -r requirements.txt
-    ```
-4. **Run the Analysis:**
-    - Open the project notebook or script and run the cells to see the analysis.
+### Clone the Repository:
+
+git clone https://github.com/yourusername/Aerofit-Descriptive-Statistics-Probability.git
+
+### Navigate to the Project Directory:
+```sh
+cd Aerofit-Descriptive-Statistics-Probability
+```
+
+### Install the Required Libraries:
+```sh
+pip install -r requirements.txt
+```
+
+### Run the Analysis:
+Open the Python script aerofit_statistics_probability.py and run it to see the analysis.
+
+## Results
+The script generates statistical summaries and probability calculations, along with visualizations. Check the console output and plots for detailed insights.
 
 ## Conclusion
 This project provides a comprehensive analysis of the Aerofit dataset, utilizing descriptive statistics and probability analysis. The insights gained from this analysis can help in understanding customer behavior and preferences.
-
-## Contact
-For any queries, feel free to reach out at your.email@example.com.
-
