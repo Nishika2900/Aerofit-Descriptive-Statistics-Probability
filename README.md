@@ -80,6 +80,53 @@ Open the Python script aerofit_statistics_probability.py and run it to see the a
 
 ## Results
 The script generates statistical summaries and probability calculations, along with visualizations. Check the console output and plots for detailed insights.
+![image](https://github.com/user-attachments/assets/ef067d5a-4cc6-43b9-9d23-6867ff970a88)
+![image](https://github.com/user-attachments/assets/7cbc23ac-378e-40cc-80d4-8238dd657612)
+![image](https://github.com/user-attachments/assets/52551493-076a-44d1-b1de-ab5616734941)
+
+Gender     Female      Male       All
+Product                              
+KP281    0.222222  0.222222  0.444444
+KP481    0.161111  0.172222  0.333333
+KP781    0.038889  0.183333  0.222222
+All      0.422222  0.577778  1.000000
+Gender    Female      Male       All
+Miles                               
+21      0.005556  0.000000  0.005556
+38      0.016667  0.000000  0.016667
+42      0.005556  0.016667  0.022222
+47      0.022222  0.027778  0.050000
+53      0.011111  0.027778  0.038889
+56      0.022222  0.011111  0.033333
+64      0.016667  0.016667  0.033333
+66      0.044444  0.011111  0.055556
+74      0.016667  0.000000  0.016667
+75      0.033333  0.022222  0.055556
+80      0.000000  0.005556  0.005556
+85      0.072222  0.077778  0.150000
+94      0.022222  0.022222  0.044444
+95      0.022222  0.044444  0.066667
+100     0.011111  0.027778  0.038889
+Gender    Female      Male       All
+Miles                               
+260     0.000000  0.005556  0.005556
+280     0.005556  0.000000  0.005556
+300     0.000000  0.005556  0.005556
+360     0.000000  0.005556  0.005556
+All     0.422222  0.577778  1.000000
+Usage       2   3   4   5  6  7  All
+Education                           
+12          1   1   1   0  0  0    3
+13          0   2   3   0  0  0    5
+14         15  28   9   2  0  1   55
+15          3   1   0   1  0  0    5
+16         13  34  29   7  2  0   85
+18          1   3   7   7  4  1   23
+20          0   0   1   0  0  0    1
+21          0   0   2   0  1  0    3
+All        33  69  52  17  7  2  180
+
+
 
 ## Conclusion
 This project provides a comprehensive analysis of the Aerofit dataset, utilizing descriptive statistics and probability analysis. The insights gained from this analysis can help in understanding customer behavior and preferences.
