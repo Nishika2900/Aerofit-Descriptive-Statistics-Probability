@@ -1,3 +1,4 @@
+
 # Importing necessary libraries
 import pandas as pd
 import numpy as np
@@ -6,7 +7,7 @@ import matplotlib.pyplot as plt
 from scipy.stats import binom, norm
 
 # Load the dataset
-df = pd.read_csv('https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/001/125/origin')
+df = pd.read_csv('https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/001/125/original/aerofit_treadmill.csv?1639992749')
 
 # Display basic statistics and information about the dataset
 print(df.describe(include='all'))
@@ -18,12 +19,20 @@ print(df.isnull().sum())
 # Display the first few rows of the dataset
 print(df.head())
 
+# Define the list of numerical columns
+numerical_cols = ['Age', 'Education', 'Usage', 'Fitness', 'Income', 'Miles']
+
+# Select and display the numerical columns from the DataFrame
+df_numerical = df[numerical_cols]
+print(df_numerical.head())
+
+
 # Detect and handle outliers using IQR
-Q1 = df.quantile(0.25)
-Q3 = df.quantile(0.75)
+Q1 = df_numerical.quantile(0.25)
+Q3 = df_numerical.quantile(0.75)
 IQR = Q3 - Q1
-outliers = ((df < (Q1 - 1.5 * IQR)) | (df > (Q3 + 1.5 * IQR))).any(axis=1)
-print(df[outliers != True])
+outliers = ((df_numerical < (Q1 - 1.5 * IQR)) | (df_numerical > (Q3 + 1.5 * IQR))).any(axis=1)
+print(df_numerical[outliers != True])
 
 # Replace infinite values with NaN and categorize income
 df.replace([np.inf, -np.inf], np.nan, inplace=True)
@@ -55,7 +64,7 @@ plt.show()
 
 # Analyze Usage by Age
 print(pd.crosstab(index=df['Usage'], columns=df['Age'], normalize=True, margins=True))
-fig, ax = plt.subplots(1, 1, figsize=(15, 5))
+fig, ax = plt.subplots(1, 1, figsize=(8, 5))
 sns.barplot(data=df, x='Age', y='Usage', ax=ax)
 plt.xticks(fontsize=15)
 plt.yticks(fontsize=15)
@@ -69,7 +78,7 @@ plt.show()
 print(pd.crosstab(index=df['Product'], columns=df['Gender'], normalize=True, margins=True))
 
 # Analyze Usage by Miles and Gender
-s = pd.crosstab(index=df['Miles'], columns=df['Gender'], normalize=True, margins=True))
+s = pd.crosstab(index=df['Miles'], columns=df['Gender'], normalize=True, margins=True)
 print(s.head(15))
 print(s.tail(5))
 
